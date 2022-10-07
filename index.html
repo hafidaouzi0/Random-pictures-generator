@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" >
+ 
+</head>
+<body >
+    
+<!--first thing let's get that generator code-->
+
+<nav class="myNav">
+<ul class="myList">
+<li><a class="link" href="contact.html">Contact Us</a></li>
+<li  ><a class="link" href='About.html'  id="dog">About</a></li>
+<li><a class="link" href="secindex.html">More</a></li>
+<li><a class="active link" href="index.html">Home</a></li>
+</ul>
+</nav>
+<label class="label" style="font-size: 29px;">
+    <span style="color: rgb(0, 165, 66);">Wide</span> <span style="color:black
+    "> Generator</span> </label>
+
+<!--
+<div class="myNav">
+<ul class="myList">
+<li><button class="btn1"><a class="link" href="#">Contact</a></button></li>
+<li><button class="btn1"><a class="link" href=''  id="dog">About</a></button></li>
+<li><button class="btn1"><a class="link" href="secindex.html">More</a></button></li>
+<li><button class="btn1"><a class="active link" href="index.html">Home</a></button></li>
+</ul>
+</div>
+-->
+
+
+
+
+<div class="iContainer" id="imgContainer"  >
+    <button id="btnGenerator">Get a Cat</button>
+    <img style="width: 400px;height:400px ;display: block;"
+     id="myImg" src="mycat.jpg" >
+    
+</div>
+
+
+
+
+
+
+<!--that's how we link our js file-->
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+
+<script>$(document).ready(function() {  
+    $('ul li a').click(function(){  
+      $('li a').removeClass("active");  
+      $(this).addClass("active");  
+  });  
+  });  </script>
+</body>
+</html>
